@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/a9cdeb15a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="w-3/4 mx-auto text-center bg-cyan-500 mt-4 p-2 rounded-md">
+        <h1 class="text-4xl font-semibold m-6">My Text Editor</h1>
+        <div class="w-3/4 mx-auto border-2 border-solid border-cyan-900 p-4 bg-cyan-300 rounded mb-6">
+            <div class="flex justify-between mb-1">
+                <div>
+                    <i class="fa-solid fa-bold p-2" id="bold"></i>
+                    <i class="fa-solid fa-italic p-2" id="italic"></i>
+                    <i class="fa-solid fa-underline p-2" id="underline"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-align-left p-2" id="left"></i>
+                    <i class="fa-solid fa-align-right p-2" id="right"></i>
+                    <i class="fa-solid fa-align-center p-2" id="center"></i>
+                    <i class="fa-solid fa-align-justify p-2" id="justify"></i>
+                </div>
+                <div class="items-center">
+                    <input type="number" class="w-8 bg-cyan-300" id="font-size">
+                    <input type="color" id="color" class="h-4/5">
+                </div>
+            </div>
+            <hr class="border-cyan-900 p-2">
+            <textarea id="text" class="w-full h-80" rows="16"></textarea>
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="js/functions.js"></script>
+    <script src="js/font-size&color.js"></script>
+    <script src="js/align.js"></script>
+    <script src="js/decoration.js"></script>
+</body>
+</html>
